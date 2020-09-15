@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+    <div class="col-md-4 bg-dark">
+        <div id="carros" class="row h-auto m-3 pl-5 bg-warning">
+            <h1 class="display-1"> <label id="timeSemaforo"> </label></h1>
+            <img src="~/image/carro.png" width="30" height="30" /> <h4>Carros</h4>
+        </div>
+    </div>
+
+    <div class="col-md-4 bg-dark">
+        <div class="row">
+            <div id="vermelho" class="semaforoVermelho"></div>
+        </div>
+        <div class="row">
+            <div id="amarelo" class="semaforoAmarelo"></div>
+        </div>
+        <div class="row">
+            <div id="verde" class="semaforoVerde"></div>
+        </div>
+    </div>
+
+    <div class="col-md-4 bg-dark">
+
+        <div id="pedestres" class="row h-auto m-3 pl-5 bg-warning">
+            <h1 class="display-1"> <label id="timeSemaforoPedestres"> </label></h1>
+            <img src="~/image/pedestre.jpg" width="30" height="30" /> <h4>Pedestres</h4>
+        </div>
+
+    </div>
+
+    <link href="~/css/Semafaro.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>>
+    <script src="~/js/Semafaro.js"></script>
